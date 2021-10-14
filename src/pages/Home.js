@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Route, Router, Switch } from 'react-router';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AppNavbar from './AppNavbar';
 import Memo from './Memo/Memo';
@@ -22,7 +21,7 @@ const Home = () => {
 
 const About = () => (
     <div>
-        <h1>This is about page</h1>
+        <h1>This is about page.</h1>
     </div>
 )
 
