@@ -8,6 +8,7 @@ const AppNavbar = () => {
                 <Navbar.Brand href="/react-playground/#/">Home</Navbar.Brand>
                     <Nav className="me-auto">
                     <Nav.Link href="/react-playground/#/memo">Memo</Nav.Link>
+                    <Nav.Link href="/react-playground/#/calculator">Calculator</Nav.Link>
                     <Nav.Link href="/react-playground/#/game">Game</Nav.Link>
                 </Nav>
             </Container>
