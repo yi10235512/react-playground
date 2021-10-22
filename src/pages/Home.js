@@ -53,8 +53,8 @@ const Home = () => {
                     </Form.Text>
                     <br />
                     <div className="modal-button">
-                    <Button variant="primary" disabled={name === ""} onClick={handleSubmit}>Submit</Button>
-                    <Button variant="secondary" onClick={handleSkip}>Skip</Button>
+                        <Button variant="primary" disabled={name === ""} onClick={handleSubmit} style={{marginRight: "5px"}}>Submit</Button>
+                        <Button variant="secondary" onClick={handleSkip}>Skip</Button>
                     </div>
                 </Form>
                 </Modal.Body>
