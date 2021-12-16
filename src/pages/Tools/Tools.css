@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.line-remover > textarea {
+    resize: none;
+    width: 24rem;
+    height: 36rem;
+}
+
+.line-remover{
+    position: relative;
+    top: 1em;
+    margin: auto;
+    width: fit-content;
+}
+
+/* .raw-code {
+   
+} */
+
+/* .result-code {
+
+} */

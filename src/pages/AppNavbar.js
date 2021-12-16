@@ -12,6 +12,7 @@ const AppNavbar = () => {
                         <Nav.Link href="/react-playground/#/memo">Memo</Nav.Link>
                         <Nav.Link href="/react-playground/#/calculator">Calculator</Nav.Link>
                         <Nav.Link href="/react-playground/#/game">Game</Nav.Link>
+                        <Nav.Link href="/react-playground/#/tools">Tools</Nav.Link>
                     </Nav>
                     <div style={{color: "white"}}>Hi </div>
                 </Navbar.Collapse>

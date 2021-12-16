@@ -5,6 +5,7 @@ import AppNavbar from './AppNavbar';
 import Memo from './Memo/Memo';
 import Game from './Game/Game';
 import Calculator from './Calculator/Calculator';
+import Tools from './Tools/Tools';
 import { Modal, Button, Form } from 'react-bootstrap';
 
 
@@ -68,6 +69,7 @@ const Home = () => {
                     <Route path="/memo" component={Memo} />
                     <Route path="/calculator" component={Calculator} />
                     <Route path="/game" component={Game} />
+                    <Route path="/tools" component={Tools} />
                 </Switch>
             </HashRouter>
         </React.Fragment>
