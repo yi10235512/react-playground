@@ -1,7 +1,8 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
-const AppNavbar = () => {
+const AppNavbar = ({name}) => {
+    console.log("name is ",name)
     return (
         <Navbar bg="dark" variant="dark" expand="md">
             <Container>
@@ -10,11 +11,10 @@ const AppNavbar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/react-playground/#/memo">Memo</Nav.Link>
-                        <Nav.Link href="/react-playground/#/calculator">Calculator</Nav.Link>
-                        <Nav.Link href="/react-playground/#/game">Game</Nav.Link>
                         <Nav.Link href="/react-playground/#/tools">Tools</Nav.Link>
+                        <Nav.Link href="/react-playground/#/game">Game</Nav.Link>
                     </Nav>
-                    <div style={{color: "white"}}>Hi </div>
+                    <div style={{color: "white"}}>Hi {name}</div>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

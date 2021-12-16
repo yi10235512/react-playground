@@ -4,7 +4,6 @@ import { Switch, Route } from 'react-router';
 import AppNavbar from './AppNavbar';
 import Memo from './Memo/Memo';
 import Game from './Game/Game';
-import Calculator from './Calculator/Calculator';
 import Tools from './Tools/Tools';
 import { Modal, Button, Form } from 'react-bootstrap';
 
@@ -63,13 +62,12 @@ const Home = () => {
             </Modal>
 
             <HashRouter>
-                <AppNavbar/>
+                <AppNavbar name={name}/>
                 <Switch>
                     <Route exact path="/" render={() => <About name={name} />} />
                     <Route path="/memo" component={Memo} />
-                    <Route path="/calculator" component={Calculator} />
-                    <Route path="/game" component={Game} />
                     <Route path="/tools" component={Tools} />
+                    <Route path="/game" component={Game} />
                 </Switch>
             </HashRouter>
         </React.Fragment>
