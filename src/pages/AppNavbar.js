@@ -2,7 +2,6 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
 const AppNavbar = ({name}) => {
-    console.log("name is ",name)
     return (
         <Navbar bg="dark" variant="dark" expand="md">
             <Container>
