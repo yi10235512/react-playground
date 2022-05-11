@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { HashRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router';
-import AppNavbar from './AppNavbar';
-import Memo from './Memo/Memo';
-import Game from './Game/Game';
-import Tools from './Tools/Tools';
+import AppNavbar from '../AppNavbar';
+import Memo from '../Memo/Memo';
+import Game from '../Game/Game';
+import Tools from '../Tools/Tools';
 import { Modal, Button, Form } from 'react-bootstrap';
+import About from './About';
 
 
 const Home = () => {
-    const [ isModalShow, setIsModalShow] = useState(true);
-    const [ name, setName] = useState("");
+    const [ isModalShow, setIsModalShow] = useState(false);
+    const [ name, setName] = useState("Stranger");
 
     const handleKeyPress = (e) => {
         if (e.key === 'Enter') {
@@ -29,9 +30,6 @@ const Home = () => {
 
     const handleSkip = () => {
         setIsModalShow(false);
-        if(name === "") {
-            setName("Stranger");
-        }
     }
 
     return (
@@ -71,15 +69,6 @@ const Home = () => {
                 </Switch>
             </HashRouter>
         </React.Fragment>
-    )
-}
-
-const About = ({name}) => {
-    return(
-        <div>
-            <h1> Hi! {name}!</h1>
-            <h1> This is about page.</h1>
-        </div>
     )
 }
 
