@@ -28,7 +28,7 @@ const Calculator = () => {
 
     return(
         <table className="calculator">
-            <input type="text" name="input" size="16" id="answer" value={answer}/>
+            <input disabled type="text" name="input" size="16" id="answer" value={answer}/>
             <br/>
             <input value="c" type="button" className="calculator-btn" onClick={(e) => clickPad(e.target.value)}/>
             <input value="+/-" type="button" className="calculator-btn" disabled/>
