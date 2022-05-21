@@ -1,9 +1,11 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { useLocation, Link } from 'react-router-dom';
 
 const AppNavbar = ({name}) => {
+    const location = useLocation();
     return (
-        <Navbar bg="dark" variant="dark" expand="md">
+        <Navbar bg="dark" variant="dark" expand="md" activeKey={location.pathname} >
             <Container>
                 <Navbar.Brand href="/react-playground/#/">Home</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
